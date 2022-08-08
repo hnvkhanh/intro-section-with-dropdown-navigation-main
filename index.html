@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+
+        <a class="navbar-brand" href="#">snap</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <img src="./images/icon-menu.svg">
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header me-0">    
+            <h5 id="offcanvasRightLabel"></h5>
+            <a type="button" class="text-reset close-button" data-bs-dismiss="offcanvas" aria-label="Close">
+              <img src="./images/icon-close-menu.svg">
+            </a>        
+            
+          </div>
+          <div class="offcanvas-body">
+            
+            <ul class="navbar-nav left-nav-section me-auto ms-5">
+            
+              <li class="nav-item dropdown me-4">
+  
+                <a class="nav-link dropdown-toggle caret-feat" aria-current="page" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                  Features
+                  <img src="./images/icon-arrow-down.svg" class="arrow-down-feat hi">                             
+                </a>
+                
+                <ul class="dropdown-menu dropdown-menu-end shadow-lg">
+                  <li>                               
+                    <a class="dropdown-item" href="#">
+                      <img src="./images/icon-todo.svg" class="icon-pad">
+                      Todo list
+                    </a>                              
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="./images/icon-calendar.svg" class="icon-pad">
+                      Calendar
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="./images/icon-reminders.svg" class="icon-pad">
+                      Reminders                    
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <img src="./images/icon-planning.svg" class="icon-pad">
+                      Planning                    
+                    </a>
+                  </li>
+                </ul>
+              </li>
+  
+              <li class="nav-item dropdown me-4">
+  
+                <a class="nav-link dropdown-toggle caret-com" aria-current="page" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                  Company
+                  <img src="./images/icon-arrow-down.svg" class="arrow-down-com">                             
+                </a>
+                
+                <ul class="dropdown-menu shadow-lg">
+                  <li>                               
+                    <a class="dropdown-item" href="#">
+                      History
+                    </a>                              
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Our Team                  
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Blog                
+                    </a>
+                  </li>                
+                </ul>
+              </li>
+  
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#">Careers</a>
+              </li>
+  
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+                          
+  
+            </ul>    
+
+            <ul class="navbar-nav right-nav-section ms-auto">
+              <li class="nav-item text-center login">
+                <a href="#" class="nav-link">Login</a>
+              </li>
+              
+              <li class="nav-item me-5">
+                <button type="button" class="register nav-link">
+                  Register
+                </button>
+              </li>
+              
+            </ul>
+
+
+          </div>
+        </div>  
+      </div>
+    </nav>
+  </div>
+  
+  <div class="container-lg">
+    <div class="row justify-content-evenly">
+
+      <div class="col-lg-6 col-md-12 order-lg-2">
+        <img src="./images/image-hero-desktop.png" class="hero desktop-img">
+        <img src="./images/image-hero-mobile.png" class="hero mobile-img">
+      </div>
+
+      <div class="col-lg-6 col-md-12 order-lg-1">
+        <div class="main">
+          <h1 class="header">Make remote work</h1>
+          <p class="content">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+          <button type="button" class="btn btn-dark learn-more">Learn more</button>
+          <div class="row justify-content-evenly">
+            <div class="col-3">
+              <img src="./images/client-databiz.svg" class="brand">
+            </div>
+            <div class="col-3">
+              <img src="./images/client-audiophile.svg" class="brand">
+            </div>
+            <div class="col-3">
+              <img src="./images/client-meet.svg" class="brand">
+            </div>
+            <div class="col-3">
+              <img src="./images/client-maker.svg" class="brand">
+            </div>
+          </div>
+        </div>    
+      </div>
+
+    </div>
+  </div>
+
+  
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/hnvkhanh">Van Khanh</a>.
+    </div>
+  </footer>
+  
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>  
+    
+  <script src="./index.js"></script>
+  
+</body>
+</html>
