@@ -138,7 +138,7 @@ body{
 }
 
 
-@media (max-width: 391px) {
+@media (max-width: 821px) {
     .desktop-img{
         visibility: hidden;
         position: absolute;   
@@ -153,8 +153,7 @@ body{
         text-align: center;
     }
 
-    .hero{   
-        width: 22rem; 
+    .hero{           
         margin: 0;
         margin-bottom: 1.5rem;    
         margin-top: 1rem;    
@@ -185,7 +184,7 @@ body{
     }
 }
 
-@media (min-width: 391px) {
+@media (min-width: 821px) {
     .login{
         margin-right: 30px;
     }
