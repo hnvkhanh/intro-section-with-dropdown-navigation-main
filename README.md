@@ -10,7 +10,6 @@ Thanks for checking out this front-end coding challenge.
 ## This project is built with
 
 - HTML
-- Sass
 - Bootstrap v5.2
 - And little bit Javascript
 
